@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+</head>
+<body>
+    <!-----1---2--------------------------------------------
+    <p id = "text1" title = "Regular text">Text the best </p>
+    <span class = "simple-text">Text 1 </span>
+    <span class = "simple-text">Text 2</span>
+    <span>Text 3</span>          
+    --------------------------------------------------------->
+    
+    <!--3-->
+    <!-- can add action after id, 
+        method call onsubmit with type submit , not button, 
+        can also be called onclick with button
+        instead of this we can write document.getElementById.... 
+        this - all object with id main-form-->
+    <!-- <form id = "main-form" onsubmit="return checkForm(this)" method="post">   --> 
+    <form id = "main-form" method="post"> 
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Name" id="name"><br><br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" placeholder="Password" id="pass"><br><br>
+        <label for="repass">Password check:</label>
+        <input type="password" name="trpass" placeholder="Password check" id="repass"><br><br>
+        <span>Sex:</span>
+        <input type="radio" name="state" id="male" value="Male">
+        <label for="male">Male</label>  
+        <input type="radio" name="state" id="female" value="Female">
+        <label for="female">Fenale</label> 
+        <div id="error" style="color:red"></div>
+        <input type="submit" name="submit" value="Ready"> <!-- can be button -->
+    </form>
+
+
+    <noscript>Turn on Java Script in browser!</noscript>
+    <script src = js1.js> </script>
+    
+</body>
+</html>
